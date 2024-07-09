@@ -488,7 +488,167 @@
                         
                         <p>f(x) = (1 / (B(df1/2, df2/2) * (df1/df2)^(df1/2) * x^((df1/2)-1) * (1 + ((df1/df2) * x))^(-(df1+df2)/2)</p>
                         
-                        Donde x es la variable aleatoria, df1 y df2 son los grados de libertad y B es la función beta.</p>
-    </body>
+                        Donde x es la variable aleatoria, df1 y df2 son los grados de libertad y B es la función beta.
+                    </p>
+
+                    <h2>5.-Regresión lineal. </h2>
+                    <h3>5.1 Regresión y correlación.</h3>
+                    <h4>5.1.1 Diagrama de dispersión.</h4>
+                    <p>Un diagrama de dispersión, también conocido como gráfico de dispersión o diagrama de nube de puntos,
+                         es una herramienta gráfica utilizada en estadística y análisis de datos para visualizar la relación entre dos variables continuas. El diagrama de dispersión muestra la distribución de los puntos en un plano cartesiano, 
+                        donde cada punto representa una observación de ambas variables.
+                    </p>
+                    <h4>5.1.2 Regresión lineal simple.</h4>
+                    <p>La regresión lineal simple es una técnica estadística que se utiliza para modelar y analizar la relación entre una variable independiente (X) y una variable dependiente (Y). El objetivo de la regresión lineal simple es encontrar una línea recta que mejor se ajuste a los datos observados, de manera que pueda utilizarse para predecir los valores de la variable dependiente en función de los valores de la variable independiente.
+
+                        La ecuación de regresión lineal simple se representa como:
+                        
+                        <p>Y = β₀ + β₁X + ε</p>
+                        
+                        Donde:
+                        <ul>
+                            <li>Y representa la variable dependiente.</li>
+                            <li>X representa la variable independiente.</li>
+                            <li>β₀ es el intercepto, que representa el valor de Y cuando X es igual a cero.</li>
+                            <li>β₁ es la pendiente, que indica cómo cambia Y cuando X aumenta en una unidad.</li>
+                            <li>ε representa el término de error, que captura la variación no explicada por el modelo.</li>
+                        </ul>
+                        El objetivo de la regresión lineal simple es encontrar los valores óptimos de los coeficientes β₀ y β₁ que minimizan la suma de los errores al cuadrado (método de mínimos cuadrados). Estos coeficientes pueden estimarse mediante técnicas como el método de los mínimos cuadrados ordinarios o mediante técnicas más avanzadas,
+                         como el método de máxima verosimilitud.
+                    </p>
+                    <h4>5.1.3 Correlación.</h4>
+                    <p>La correlación es una medida estadística que indica la relación entre dos variables. Se utiliza para determinar si existe una asociación entre las variables y la fuerza de esa asociación. La correlación se expresa en un valor que varía entre -1 y 1, donde:
+                        <ul>
+                            <li> Un valor de correlación de 1 indica una correlación positiva perfecta, 
+                                lo que significa que las variables tienen una relación lineal directa y crecen o disminuyen juntas.
+                            </li>
+                            <li>Un valor de correlación de -1 indica una correlación negativa perfecta, 
+                                lo que significa que las variables tienen una relación lineal inversa y cuando una variable aumenta, 
+                                la otra disminuye.
+                            </li>
+                            <li> Un valor de correlación de 0 indica una falta de correlación lineal, 
+                                lo que significa que no hay relación lineal entre las variables.
+                            </li>
+                        </ul>
+                        La correlación se calcula utilizando diversos métodos,
+                         siendo el más común el coeficiente de correlación de Pearson. 
+                         El coeficiente de correlación de Pearson se calcula mediante la siguiente fórmula:
+                        
+                        <p>r = Σ((Xi - X̄)(Yi - Ȳ)) / √(Σ(Xi - X̄)² * Σ(Yi - Ȳ)²)</p>
+                        
+                        Donde:
+                        <ul>
+                            <li>Xi y Yi son los valores individuales de las variables X e Y, respectivamente.</li>
+                            <li>X̄ y Ȳ son las medias de las variables X e Y, respectivamente.</li>
+                        </ul> 
+                        </p>
+                        <h4>5.1.4 Determinación y análisis de los coeficientes
+                            de correlación y de determinación.</h4>
+                            <p>Los coeficientes de correlación y de determinación son medidas estadísticas que se utilizan para analizar la relación entre dos variables y cuantificar la fuerza y la proporción de la variabilidad explicada por esa relación.
+
+                                <p>Coeficiente de correlación (r):</p>
+                                El coeficiente de correlación (r) es una medida que indica la dirección y la fuerza de la relación entre dos variables. 
+                                Puede variar entre -1 y 1.
+                                <ul> 
+                                    <li>Un valor de r cercano a 1 indica una correlación positiva fuerte,
+                                         lo que significa que las variables tienen una relación lineal directa y crecen o disminuyen juntas.</li>
+                                    <li>Un valor de r cercano a -1 indica una correlación negativa fuerte,
+                                         lo que significa que las variables tienen una relación lineal inversa y cuando una variable aumenta,
+                                         la otra disminuye.</li>
+                                    <li>Un valor de r cercano a 0 indica una correlación débil o nula, 
+                                        lo que significa que no hay una relación lineal clara entre las variables.</li>
+                                </ul>
+                                El coeficiente de correlación más comúnmente utilizado es el coeficiente de correlación de Pearson, 
+                                pero también existen otros coeficientes de correlación, como el coeficiente de correlación de Spearman y el coeficiente de correlación de Kendall,
+                                que se utilizan para variables no lineales o categóricas.
+                                <p>Coeficiente de determinación (R^2):</p>
+                                El coeficiente de determinación (R^2) es una medida que representa la proporción de la varianza de una variable que puede ser explicada por otra variable. 
+                                Puede variar entre 0 y 1.
+                                <ul>
+                                    <li>Un valor de R^2 cercano a 1 indica que una gran parte de la variabilidad de la variable dependiente puede ser explicada por la variable independiente.</li>
+                                    <li>Un valor de R^2 cercano a 0 indica que la variable independiente no explica bien la variabilidad de la variable dependiente.</li>
+                                </ul>
+                                El coeficiente de determinación se calcula a partir del coeficiente de correlación (r) 
+                                y se obtiene elevando al cuadrado el valor de r.
+                                 Matemáticamente, se expresa como R^2 = r^2.</p>
+                                <h4>5.1.5 Distribución normal bidimensional</h4>
+                                <p>La distribución normal bidimensional, 
+                                    también conocida como distribución bivariable normal, 
+                                    es un modelo estadístico que describe conjuntamente la variabilidad de dos variables continuas. 
+                                    Es una extensión de la distribución normal univariable a dos dimensiones. 
+
+                                    En la distribución normal bidimensional, las variables están correlacionadas y se distribuyen normalmente. 
+                                    Se caracteriza por dos parámetros:
+                                    la media y la matriz de covarianza. 
+                                    La media especifica el centro de la distribución y la matriz de covarianza controla la forma de la distribución y la relación entre las variables.
+                                </p>
+                                <h4>5.1.6 Intervalos de confianza y pruebas para el
+                                    coeficiente de correlación.
+                                </h4>
+                                <p>Los intervalos de confianza y las pruebas estadísticas para el coeficiente de correlación se 
+                                    utilizan para inferir información sobre la relación entre dos variables continuas.
+                                     Estas herramientas permiten evaluar si la correlación observada es estadísticamente 
+                                     significativa y proporcionan un rango de valores dentro del cual es probable que se encuentre 
+                                     el verdadero coeficiente de correlación en la población.
+                                     <p>1.-Intervalo de confianza para el coeficiente de correlación:</p>
+                                     <ul>
+                                        <li>El intervalo de confianza es un rango de valores dentro del 
+                                            cual se espera que se encuentre el verdadero coeficiente de
+                                             correlación en la población con un cierto nivel de confianza.</li>
+                                        <li>El nivel de confianza típico es del 95%, lo que significa que hay un 95% 
+                                            de probabilidad de que el intervalo contenga el verdadero valor del coeficiente de correlación.</li>
+                                        <li>El intervalo de confianza se calcula utilizando la distribución t de Student o la distribución normal, 
+                                            dependiendo del tamaño de la muestra y si se conocen o no los parámetros de la población.</li>
+                                        <li>El cálculo del intervalo de confianza implica estimar el error estándar de la correlación y
+                                             utilizar los valores críticos de la distribución para determinar los límites inferior y superior del intervalo.</li>
+                                     </ul>
+                                     <p>2.-Pruebas de hipótesis para el coeficiente de correlación:</p>
+                                     <ul>
+                                        <li>Las pruebas de hipótesis se utilizan para evaluar si
+                                             la correlación observada es estadísticamente significativa o si podría haber ocurrido por azar.</li>
+                                        <li>La hipótesis nula (H0) asume que no hay 
+                                            correlación en la población, es decir, el coeficiente de correlación es igual a cero.</li>
+                                        <li>La hipótesis alternativa (H1) afirma que hay una correlación en la población, es decir,
+                                             el coeficiente de correlación es diferente de cero.</li>
+                                        <li>Se utiliza un nivel de significancia predefinido (por ejemplo, 0.05) 
+                                            para tomar una decisión sobre la hipótesis nula.</li>
+                                        <li>La prueba de hipótesis puede realizarse utilizando la distribución t de Student o la distribución normal, 
+                                            dependiendo del tamaño de la muestra y si se conocen o no los parámetros de la población.</li>
+                                        <li>El cálculo de la prueba de hipótesis implica calcular un estadístico de prueba (por ejemplo,
+                                             el coeficiente de correlación ajustado por el tamaño de la muestra) y compararlo con un valor 
+                                             crítico de la distribución para determinar si la diferencia es estadísticamente significativa.</li>
+                                     </ul>
+                                </p>
+                                <h4>5.1.7 Errores de medición.</h4>
+                                <p>Los errores de medición son discrepancias o desviaciones entre los 
+                                    valores medidos y los valores reales de una variable. Estos errores 
+                                    pueden ocurrir debido a diversas fuentes y pueden afectar la precisión 
+                                    y la confiabilidad de los resultados de una medición. 
+                                    Aquí se presentan algunos tipos comunes de errores de medición:
+                                    <ul> <li>Error sistemático: Este tipo de error se produce de 
+                                        manera consistente y constante en todas las mediciones.
+                                        Puede deberse a problemas en el instrumento de medición, 
+                                        al método utilizado o a factores ambientales. El error 
+                                        sistemático puede llevar a mediciones sesgadas y distorsionadas.</li>
+                                        <li>Error aleatorio: Este tipo de error se produce de manera 
+                                        aleatoria y no sigue un patrón consistente. Puede deberse a
+                                        fluctuaciones naturales, errores de lectura o variabilidad en 
+                                        las condiciones experimentales. El error aleatorio puede ser 
+                                        reducido mediante la repetición de las mediciones y el cálculo 
+                                        de promedios. Sin embargo, no puede ser completamente eliminado.</li>
+                                        <li>Error de precisión: Este error se refiere a la falta de exactitud y
+                                        consistencia en las mediciones repetidas. Se produce cuando las
+                                        mediciones varían entre sí, incluso cuando se toman bajo las
+                                        mismas condiciones y utilizando el mismo instrumento.
+                                        El error de precisión puede ser causado por factores como
+                                        la sensibilidad del instrumento, la habilidad del observador
+                                        o la falta de estandarización en el procedimiento de medición.</li>
+                                        <li>Error de exactitud: Este error se refiere a la diferencia 
+                                        entre el valor medido promedio y el valor verdadero o aceptado. 
+                                        Indica cuán cerca están las mediciones del valor real. El error de 
+                                        exactitud suele estar asociado con el error sistemático 
+                                        y puede ser corregido mediante calibración y ajuste del instrumento de medición.</li> </ul>
+                                </p>
+</body>
 </head>
 </html>
